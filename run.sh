@@ -4,3 +4,5 @@ for bot in $(cat config.json | jq -r 'to_entries[] | "\(.key),\(.value.source)"'
   git clone $source $name; \
   cd $name && pip install --no-cache-dir -r requirements.txt && cd ..; \
 done
+
+gunicorn app:app && python3 worker.py
