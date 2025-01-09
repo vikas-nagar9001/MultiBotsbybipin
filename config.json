@@ -1,23 +1,16 @@
 {   
-    "bot1": {
-        "source": "https://github.com/<GitHub Username>/<repo1>.git",
+    "login-restrict-bot": {
+        "source": "https://github.com/vikas-nagar9001/vikas-restrict-bot.git",
         "env": {
             "TOKEN": ""
         },
-        "run": ""
+        "run": "bot.py"
     },
-    "bot2": {
-        "source": "https://github.com/<GitHub Username>/<repo2>.git",
+    "simple-bot": {
+        "source": "https://github.com/vikas-nagar9001/savesimplebot.git",
         "env": {
             "TOKEN": ""
         },
-        "run": ""
-    },
-    "bot3": {
-        "source": "https://<GitHub Username>:<GitHub Token>@github.com/<GitHub Username>/<private-repo>.git",
-        "env": {
-            "TOKEN": ""
-        },
-        "run": ""
+        "run": "main.py"
     }
 }
